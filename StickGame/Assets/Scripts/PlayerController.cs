@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     public GameObject paper;
     public GameObject inventory;
 
+    public GameObject smallPaper;
+
     
     // Start is called before the first frame update
     void Start()
@@ -60,6 +62,7 @@ public class PlayerController : MonoBehaviour
          if (itemObtained == true)
         {
            GameObject inventoryUI = Instantiate(inventory);
+           GameObject paperInventory = Instantiate(smallPaper);
         }
     }
 }

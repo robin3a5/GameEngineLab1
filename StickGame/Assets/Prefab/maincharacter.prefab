@@ -100,6 +100,7 @@ MonoBehaviour:
   speed: 10
   paper: {fileID: 0}
   inventory: {fileID: 3087241558416532596, guid: 118afcee4a314434ea80bc36b892c49a, type: 3}
+  smallPaper: {fileID: 192375309244014298, guid: f5a00738562044248bae357a0ee6bfc6, type: 3}
 --- !u!50 &844549037
 Rigidbody2D:
   serializedVersion: 4
