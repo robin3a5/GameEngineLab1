@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     static bool itemObtained;
 
     public GameObject paper;
+    public GameObject inventory;
 
     
     // Start is called before the first frame update
@@ -22,6 +23,10 @@ public class PlayerController : MonoBehaviour
         if (itemObtained == true)
         {
             Destroy(paper);
+        }
+        if (itemObtained == true)
+        {
+           CreateInventory();
         }
 
     }
@@ -33,6 +38,8 @@ public class PlayerController : MonoBehaviour
         
         Vector2 move = transform.position;
         move.x = move.x + speed * horizontal * Time.deltaTime;
+
+       
     }
 
     void FixedUpdate()
@@ -46,6 +53,13 @@ public class PlayerController : MonoBehaviour
     public void ObtainItem(bool foo)
     {
         itemObtained = foo;
-        Debug.Log(itemObtained);
+        CreateInventory();
+    }
+
+    public void CreateInventory() {
+         if (itemObtained == true)
+        {
+           GameObject inventoryUI = Instantiate(inventory);
+        }
     }
 }

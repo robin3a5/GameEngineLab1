@@ -98,6 +98,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  paper: {fileID: 0}
+  inventory: {fileID: 3087241558416532596, guid: 118afcee4a314434ea80bc36b892c49a, type: 3}
 --- !u!50 &844549037
 Rigidbody2D:
   serializedVersion: 4
