@@ -608,7 +608,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.8432055, y: -5.142709}
+  - {x: -5.655253, y: 0.07260707}
+  - {x: -5.618391, y: -5.066506}
   - {x: 4.333694, y: -5.0116844}
   - {x: 5.5291967, y: -5.0444403}
   m_AdjacentStartPoint: {x: 0, y: 0}
@@ -625,6 +626,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1766002992}
   - component: {fileID: 1766002991}
+  - component: {fileID: 1766002993}
+  - component: {fileID: 1766002994}
   m_Layer: 0
   m_Name: Paper
   m_TagString: Untagged
@@ -697,6 +700,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1766002993
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766002990}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 24.480001, y: 32.324333}
+    newSize: {x: 24.480001, y: 32.324333}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 24.480001, y: 32.324333}
+  m_EdgeRadius: 0
+--- !u!114 &1766002994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1766002990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2dbf19650ed26a419ee109d55dfba46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1927491563
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +846,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6760557368116538976, guid: 760e392c2514dbf468a3d45cb14e8a3e, type: 3}
+      propertyPath: paper
+      value: 
+      objectReference: {fileID: 1766002990}
     - target: {fileID: 6760557368116538978, guid: 760e392c2514dbf468a3d45cb14e8a3e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -815,7 +860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6760557368116538978, guid: 760e392c2514dbf468a3d45cb14e8a3e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.33
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6760557368116538978, guid: 760e392c2514dbf468a3d45cb14e8a3e, type: 3}
       propertyPath: m_LocalPosition.z
