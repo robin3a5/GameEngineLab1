@@ -6,7 +6,6 @@ public class Cutscene : MonoBehaviour
 {
      public GameObject cam1;
     public GameObject mainCamera;
-    // Start is called before the first frame update
     void OnTriggerEnter2D(Collider2D other)
     {
         PlayerController controller = other.GetComponent<PlayerController>();
@@ -18,9 +17,7 @@ public class Cutscene : MonoBehaviour
                  StartCoroutine(CutScene());
             }
             
-        }
-
-        
+        }     
     } 
 
     IEnumerator CutScene() {

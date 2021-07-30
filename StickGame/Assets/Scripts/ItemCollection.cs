@@ -12,7 +12,7 @@ public class ItemCollection : MonoBehaviour
         {
             if(controller.hasItem == false )
             {
-                controller.ObtainItem(true);
+                controller.ObtainItem(true, "paper");
                 Destroy(gameObject);
             }
         }

@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac5930a65fdddbb41b833ce16be24111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  newScene: Level1part1
+  newScene: Level1part2
 --- !u!212 &1099965377
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -549,7 +549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1230364669705927188, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3
+      value: -2.7
       objectReference: {fileID: 0}
     - target: {fileID: 1230364669705927188, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
       propertyPath: m_LocalPosition.z
