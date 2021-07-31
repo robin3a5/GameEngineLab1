@@ -179,6 +179,10 @@ PrefabInstance:
       value: Idle_Character1
       objectReference: {fileID: 0}
     - target: {fileID: 7738865753888518596, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
+      propertyPath: arrow
+      value: 
+      objectReference: {fileID: 3891128632776436033, guid: 8ad2ea2e48fb63f4eba53f000642c071, type: 3}
+    - target: {fileID: 7738865753888518596, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
       propertyPath: lampOn
       value: 
       objectReference: {fileID: 618699710}
@@ -190,6 +194,14 @@ PrefabInstance:
       propertyPath: lampOff
       value: 
       objectReference: {fileID: 319547889}
+    - target: {fileID: 7738865753888518596, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
+      propertyPath: smallPen
+      value: 
+      objectReference: {fileID: 7324561148284341460, guid: 7b130090aeb2cab4fb70fed3ca5cd63e, type: 3}
+    - target: {fileID: 7738865753888518596, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
+      propertyPath: inventoryTip
+      value: 
+      objectReference: {fileID: 7265701935310728959, guid: 574126438596d4d42909a597ae4572ff, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1d9036979e9714ea62f0af4e2cded9, type: 3}
 --- !u!1 &140823703 stripped

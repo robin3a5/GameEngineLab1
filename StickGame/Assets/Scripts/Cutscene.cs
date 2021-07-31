@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Cutscene : MonoBehaviour
 {
-     public GameObject cam1;
+    public GameObject cam1;
     public GameObject mainCamera;
     void OnTriggerEnter2D(Collider2D other)
     {

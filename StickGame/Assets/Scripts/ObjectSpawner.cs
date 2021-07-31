@@ -14,23 +14,21 @@ public class ObjectSpawner : MonoBehaviour
     public GameObject plane;
     public GameObject dialogue;
 
+    public GameObject cam1;
+    public GameObject mainCamera;
 
 
-   void OnTriggerEnter2D(Collider2D other)
+
+    public void spawn(Rigidbody2D other)
     {
         PlayerController controller = other.GetComponent<PlayerController>();
-        
         if (controller != null)
         {
             if (controller.hasItem)
             {
                  StartCoroutine(CutScene(controller));
-                
             }
-            
         }
-
-        
     } 
 
     IEnumerator CutScene(PlayerController controller) {
@@ -56,6 +54,15 @@ public class ObjectSpawner : MonoBehaviour
                 GameObject airplane = Instantiate(plane);
                 controller.planeSpawned = true;
                 controller.flyAway(airplane);
+                cam1.SetActive(true);
+
+                mainCamera.SetActive(false);
+                 yield return new WaitForSeconds(1.3f);
+
+
+                 mainCamera.SetActive(true);
+                 cam1.SetActive(false);
+
                 
     }
 
